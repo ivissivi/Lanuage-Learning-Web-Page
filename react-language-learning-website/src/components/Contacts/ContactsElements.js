@@ -5,7 +5,7 @@ export const ContactsContainer = styled.div`
   align-items: center;
   background: black;
   display: flex;
-  height: 800px;
+  height: 1000px;
   justify-content: center;
   padding: 0 30px;
   position: relative;

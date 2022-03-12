@@ -53,9 +53,6 @@ useEffect(() => {
           </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to="languages" smooth={true} duration={550}>Valodas</NavLinks>
-              </NavItem>
-              <NavItem>
                 <NavLinks to="services" smooth={true} duration={550}>Pakalpojumi</NavLinks>
               </NavItem>
               <NavItem>
@@ -63,14 +60,14 @@ useEffect(() => {
               </NavItem>
             </NavMenu>
               {loginStatus == '' ? (
-              <div>
+                <NavMenu>
               <NavBtn>
                 <NavBtnLink to="/registration">Reģistrēties</NavBtnLink>
               </NavBtn>
               <NavBtn>
                 <NavBtnLink to="/login">Autorizēties</NavBtnLink>
               </NavBtn>
-            </div>
+              </NavMenu>
             ) : (
               <NavBtn>
                 <NavBtnLink to="/">{loginStatus}</NavBtnLink>

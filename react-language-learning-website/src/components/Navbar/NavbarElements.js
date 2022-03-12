@@ -87,8 +87,7 @@ export const NavLinks = styled(LinkScroll)`
 
 export const NavBtn = styled.nav`
   align-items: center;
-  display: flex;
-
+  padding: 10px;
   @media screen and (max-width: 768px) {
   display: none;
 }
@@ -100,6 +99,8 @@ export const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
   color: white;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   outline: none;
   padding: 10px 22px;

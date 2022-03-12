@@ -26,7 +26,7 @@ const Banner = () => {
             <Img src={Image} type='image/svg'/>
           </ImgWrap>
           <BannerText>
-            Apgūsti dažādas valodas un padari apguves procesu interesantāku un vienkāršāku.
+            Apgūsti dažādas valodas un padari apguves procesu interesantāku un vienkāršāku. Apgūsti latviešu, angļu un krievu valodu.
           </BannerText>
         </BannerContent>
       </BannerContainer>

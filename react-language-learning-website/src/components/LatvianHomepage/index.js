@@ -24,7 +24,7 @@ export default function MainMenu() {
         </QuizBox>
         <QuizBox to="/LVQuiz">
           <LanguagesIcon src={quizIcon}/>
-          <QuizHeading>Spēle</QuizHeading>
+          <QuizHeading>Bilžu spēle</QuizHeading>
         </QuizBox>
         <QuizBox to="/LVQuiz">
           <LanguagesIcon src={quizIcon}/>

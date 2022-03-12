@@ -19,9 +19,6 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="languages" onClick={toggle}>
-            Valodas
-          </SidebarLink>
           <SidebarLink to="services" onClick={toggle}>
             Pakalpojumi
           </SidebarLink>

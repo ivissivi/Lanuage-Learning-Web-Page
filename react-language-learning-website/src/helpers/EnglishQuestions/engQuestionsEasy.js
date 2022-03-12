@@ -4,7 +4,7 @@ export const engQuestions = [
     answerA: 'a',
     answerB: 'the',
     answerC: 'one',
-    answerD: 'the',
+    answerD: 'an',
     correctAnswer: 'D'
   },
   {

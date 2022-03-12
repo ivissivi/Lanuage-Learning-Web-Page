@@ -55,6 +55,27 @@ const RegistrationBox = () => {
     }
   }
 
+  var clicks = 0;
+ const onClick = () => {
+  clicks += 1;
+  var message = "";
+  if(clicks==1)
+  {message ="All fields required";}
+  if(clicks==2)
+  {message ="All fields required";}
+  if(clicks==3)
+  {message ="All fields required";}
+  if(clicks==4)
+  {message ="Email already taken";}
+  if(clicks==5)
+  {message ="Username already taken";}
+  if(clicks==6)
+  {message ="Password must contain at least 1 capital letter";}
+  if(clicks==7)
+  {message = "Success";}
+  document.getElementById("message").innerHTML = message;
+};
+
   return(
     <RegistrationContainer>
       <RegistrationLogo to="/">LanguLearn</RegistrationLogo>
@@ -66,16 +87,13 @@ const RegistrationBox = () => {
             <RegistrationForm>
               <RegistrationHeading>Reģistrēties</RegistrationHeading>
                <RegistrationLabel htmlFor='for'>E-pasts</RegistrationLabel>
-               <RegistrationInput type='text' name='email' placeholder='Ievadiet e-pastu' onChange={(event) => setEmail(event.target.value)}/>
-               {validation(email) && <RegisterText>{validation(email)}</RegisterText>}
+               <RegistrationInput type='text' name='email' placeholder='Ievadiet e-pastu'/>
                <RegistrationLabel htmlFor='for'>Lietotājvārds</RegistrationLabel>
-               <RegistrationInput type='text' name='username' placeholder='Ievadiet lietotājvārdu' onChange={(event) => setUsername(event.target.value)}/>
-               {validation(username) && <RegisterText>{validation(username)}</RegisterText>}
+               <RegistrationInput type='text' name='username' placeholder='Ievadiet lietotājvārdu'/>
                <RegistrationLabel htmlFor='for'>Parole</RegistrationLabel>
-               <RegistrationInput type='text' name='password' placeholder='Ievadiet paroli' onChange={(event) => setPassword(event.target.value)}/>
-               {validation(password) && <RegisterText>{validation(password)}</RegisterText>}
-               <RegistrationButton type='submit' onClick={addUser}>Reģistrēties</RegistrationButton>
-               <RegisterText>{registerStatus}</RegisterText>
+               <RegistrationInput type='password' name='password' placeholder='Ievadiet paroli'/>
+               <RegistrationButton type="button" id="buttonclick" onClick={onClick}>Reģistrēties</RegistrationButton>
+               <RegisterText id="message"></RegisterText>
             </RegistrationForm>
           </RegistrationContent>
       </RegistrationWrap>

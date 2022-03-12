@@ -62,8 +62,13 @@ const LoginBox = () => {
                 <LoginLabel htmlFor='for'>Parole</LoginLabel>
                 <LoginInput type='password' placeholder='Ievadiet jūsu paroli' onChange={(event) => setPassword(event.target.value)} required />
                 <LoginButton type='submit' onClick={getUser}>Autorizēties</LoginButton>
-                <LoginText>{loginStatus}</LoginText>
-            </LoginForm>
+                  {loginStatus == 'test' ? (
+                  <LoginText>Success</LoginText>
+                  ) : (
+                  <LoginText></LoginText>
+                  )
+                 }
+                </LoginForm>
           </LoginContent>
       </LoginWrap>
     </LoginContainer>

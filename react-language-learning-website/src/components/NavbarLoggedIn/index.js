@@ -41,10 +41,18 @@ useEffect(() => {
             <FiBook />
           </MobileIcon>
             <NavMenu>
+              <NavItem>
+                <NavLinks to="languages" smooth={true} duration={550}>Valodas</NavLinks>
+              </NavItem>
             </NavMenu>
               <NavBtn>
                 <NavBtnLink to="/">{loginStatus}</NavBtnLink>
               </NavBtn>
+              <NavMenu>
+                <NavBtn>
+                  <NavBtnLink to="/">Atslēgties</NavBtnLink>
+                </NavBtn>
+                </NavMenu>
           </NavbarContainer>
         </Nav>
       </>

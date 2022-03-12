@@ -29,6 +29,11 @@ const Sidebar = ({ isOpen, toggle }) => {
             Par mums
           </SidebarLink>
         </SidebarMenu>
+        <SidebarBtnWrap>
+          <SidebarRoute to="/" onClick={toggle}>
+            Atslēgties
+          </SidebarRoute>
+        </SidebarBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   </>

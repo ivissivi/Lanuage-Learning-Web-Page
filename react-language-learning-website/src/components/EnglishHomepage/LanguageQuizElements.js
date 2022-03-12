@@ -34,7 +34,7 @@ export const QuizContainer = styled.div`
   align-items: center;
   background: #fcecdd;
   display: flex;
-  height: 722px;
+  height: 100%;
   justify-content: center;
   text-align: center;
   width: 100vew;
